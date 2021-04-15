@@ -20,10 +20,10 @@
 4. в psql выполнить CREATE EXTENSION superextension;
 
 ## Тест
-в psql выполнить select * from superfunction(5, 'A');
+в psql выполнить `select * from superfunction(5, 'A');`
 
 результат:
-
+```
  serial_number | result_string 
 ---------------+---------------
              1 | A
@@ -32,6 +32,6 @@
              4 | AAAA
              5 | AAAAA
 (5 rows)
-
+```
 
   
