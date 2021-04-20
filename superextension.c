@@ -84,10 +84,7 @@ superfunction(PG_FUNCTION_ARGS)
         
         snprintf(values[0], 16, "%d", n);
         
-        for (int i = 0; i < n; i++)
-        {
-            values[1][i] = c;
-        }
+	memset(values[1],c,n);
         values[1][n] = 0;
 
 
